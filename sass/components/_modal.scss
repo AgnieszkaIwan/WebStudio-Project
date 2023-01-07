@@ -162,48 +162,46 @@
 
 /* Check */
 
-.check {
-  &__position {
-    position: relative;
-  }
-  &__input {
-    position: relative;
-    clip: rect(0 0 0 0);
-    width: 20px;
-    height: 18px;
-    top: 27px;
-    left: 0px;
-    margin: -1px;
-  }
-
-  &__box {
-    position: absolute;
-    overflow: hidden;
-    border-radius: 0.05em;
-    background-color: $primary-bg-color;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    top: 25px;
-  }
+.check__position {
+  position: relative;
+}
+.check__input {
+  position: relative;
+  clip: rect(0 0 0 0);
+  width: 20px;
+  height: 18px;
+  top: 27px;
+  left: 0px;
+  margin: -1px;
 
   /* Checked */
-  &__input:checked + .&__box {
+  &:checked + .check__box {
     background-image: url(.../images/check.svg);
   }
 
   /* Focused */
 
-  .&:focus + .& &__box {
+  &:focus + .check__box {
     box-shadow: 0 0 0 0.1em $accent-color;
   }
 
   /* Disabled */
 
-  &:disabled + .& {
+  &:disabled + .check__box {
     box-shadow: 0 0 0 0.1em $form-color;
   }
 
-  &:checked:disabled + &__box {
+  &:checked:disabled + .check__box {
     background-color: $form-color;
   }
+}
+
+.check__box {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 0.05em;
+  background-color: $primary-bg-color;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 25px;
 }
