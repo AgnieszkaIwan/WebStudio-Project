@@ -1,0 +1,25 @@
+.page-header {
+  padding: 200px 0;
+  text-align: center;
+  background-image: linear-gradient($secondary-bg-color-transp, $secondary-bg-color-transp),
+    url(../images/main/ovelay-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
