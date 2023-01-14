@@ -62,28 +62,28 @@
   display: flex;
   margin-left: auto;
   gap: 50px;
-  color: $primary2-color;
+  color: $medium-color;
 
-  // &__link {
-  //   text-decoration: none;
-  //   font-weight: 500;
-  //   line-height: 1.14;
-  //   letter-spacing: 0.02em;
-  //   color: #757575;
-  //   display: flex;
-  //   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $medium-color;
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-  // //   .list &:focus,
-  //   .list &:hover {
-  //     color: $accent-color;
-  //   }
-  //   .list &:visited {
-  //     color: $primary2-color;
-  //   }
-  // }
+  .list &:focus,
+  .list &:hover {
+    color: $accent-color;
+  }
+  .list &:visited {
+    color: $medium-color;
+  }
+}
 
-  // &__icon {
-  //   fill: currentColor;
-  //   margin-right: 10px;
-  // }
+.contact-list__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
