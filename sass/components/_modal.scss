@@ -7,18 +7,6 @@
   background-color: $form-dark;
   transition-property: opacity, visIbility;
   transition-duration: 250ms;
-
-  @media screen and (max-width: 1199px) {
-    width: 95%;
-    max-width: 450px;
-    height: 95%;
-    max-height: 609px;
-    overflow: scroll;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
-  }
 }
 
 .is-hidden {
@@ -33,7 +21,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   min-height: 581px;
-  width: 528px;
+  width: 450px;
   background: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -75,6 +63,22 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $primary-color;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+  @media screen and (min-width: 1200px) {
+    .modal {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -132,22 +136,6 @@
     }
   }
 
-  &__feedback-field {
-    width: 448px;
-    height: 120px;
-    border: 1px solid $form-border;
-    border-radius: 4px;
-    padding-left: 16px;
-    padding-top: 12px;
-    resize: none;
-    transition: border $transition;
-
-    &:hover,
-    &:focus {
-      border-color: $accent-color;
-    }
-  }
-
   &__statement {
     position: relative;
     font-weight: 400;
@@ -166,6 +154,22 @@
     position: relative;
     display: inline;
     top: 50px;
+  }
+}
+
+.form__feedback-field {
+  width: 100%;
+  height: 120px;
+  border: 1px solid $form-border;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
+  resize: none;
+  transition: border $transition;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
   }
 }
 
