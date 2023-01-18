@@ -2,7 +2,6 @@
   &__bg {
     background-color: $secondary-bg-color;
     padding: 60px 0;
-    min-height: 603px;
   }
 
   &__items {
@@ -48,34 +47,26 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer__bg {
-    padding: 0;
+  .footer__items {
+    display: inline;
+    gap: 70px;
+    align-items: baseline;
   }
 }
+
 @media screen and (max-width: 767px) {
   .footer__logo {
-    position: absolute;
-    top: 60px;
     left: 50%;
     right: 50%;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer__list {
-    position: absolute;
-    top: 108px;
-    text-align: center;
-    width: 251px;
-  }
-}
-
 .footer__contact-section {
-  display: flex;
+  text-align: center;
   flex-wrap: wrap;
-  position: relative;
 
   @media screen and (min-width: 768px) {
+    display: inline;
     justify-content: space-around;
     align-items: center;
   }
@@ -112,24 +103,14 @@
 
 @media screen and (max-width: 767px) {
   .join-section__title {
-    position: absolute;
-    top: 160px;
-    width: 146px;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .join-section__list {
-    position: absolute;
-    top: 190px;
-    width: 206px;
-  }
-}
-@media screen and (max-width: 767px) {
   .join-section {
-    position: absolute;
-    top: 60px;
-    margin-left: 30px;
+    text-align: center;
+    margin-top: 60px;
   }
 }
 
@@ -171,7 +152,6 @@
 }
 
 .newsletter-section {
-  position: relative;
   gap: 10px;
 
   &__title {
@@ -191,7 +171,7 @@
 
   &__email {
     position: relative;
-    width: 358px;
+    width: 200px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -220,31 +200,37 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .newsletter-section {
-    position: absolute;
+    text-align: center;
+    margin-top: 60px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .newsletter-section__title {
-    position: absolute;
-    top: 387px;
-    width: 207px;
-    margin-left: 130px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .newsletter-section__form {
-    position: absolute;
-    top: 423px;
-    width: 450px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .newsletter-section__button .btn {
+  .newsletter-section__form {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .newsletter-section__button {
     position: relative;
-    top: 493px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .newsletter-section__email {
+    margin-top: 20px;
+    width: 100%;
   }
 }

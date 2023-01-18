@@ -17,7 +17,6 @@
   gap: 30px;
 
   &--description {
-    width: 450px;
     line-height: 1.71;
     color: $medium-color;
     text-align: left;
@@ -69,7 +68,6 @@
 }
 
 .section__icon {
-  width: 420px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -135,9 +133,6 @@
 }
 
 .team-member__img {
-  width: 450px;
-  height: 460px;
-
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 374px;
