@@ -29,6 +29,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section__list {
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section__list--description {
     width: 354px;
@@ -91,6 +97,10 @@
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 // SECTION2

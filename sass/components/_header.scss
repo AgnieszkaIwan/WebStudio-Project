@@ -17,12 +17,15 @@
     text-transform: uppercase;
     color: $primary-bg-color;
     margin-bottom: 30px;
+    margin: 0 auto;
   }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .page-header {
-    background-image: url(../images/main/overlay-mobile-img@2.jpg);
+@media screen and (max-width: 767px) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .page-header {
+      background-image: url(../images/main/overlay-mobile-img@2);
+    }
   }
 }
 
@@ -30,6 +33,22 @@
   .page-header {
     background-image: linear-gradient($secondary-bg-color-transp, $secondary-bg-color-transp),
       url(../images/main/overlay-tab-img.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .page-header {
+      background-image: url(../images/main/overlay-tab-img@2.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__title {
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
   }
 }
 
