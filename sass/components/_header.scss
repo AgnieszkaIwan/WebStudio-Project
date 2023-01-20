@@ -6,6 +6,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
+  max-width: 1600px;
+  height: 400px;
 
   &__title {
     font-weight: 900;
@@ -24,7 +26,8 @@
 @media screen and (max-width: 767px) {
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .page-header {
-      background-image: url(../images/main/overlay-mobile-img@2);
+      max-width: 396px;
+      background-image: url(../images/main/overlay-mobile-img@2.jpg);
     }
   }
 }
@@ -53,10 +56,18 @@
 }
 
 @media screen and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .page-header {
+      background-image: url(../images/main/ovelay-img@2.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .page-header {
     padding: 200px 0;
     background-image: linear-gradient($secondary-bg-color-transp, $secondary-bg-color-transp),
-      url(../images/main/ovelay-img.jpg);
+      url(../images/main/ovelay-img@1.jpg);
     height: 600px;
 
     &__title {
